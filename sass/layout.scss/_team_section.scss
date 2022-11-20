@@ -3,7 +3,7 @@
 	background: #f5f4fa;
 }
 .team__list {
-    @extend %list;
+	@extend %list;
 	display: flex;
 	margin-top: 50px;
 }
@@ -34,7 +34,7 @@
 	color: var(--primary-text-color);
 }
 .team__social-list {
-    @extend %list;
+	@extend %list;
 	display: flex;
 	justify-content: center;
 	margin-top: 16px;
