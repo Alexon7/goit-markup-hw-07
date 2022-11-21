@@ -18,7 +18,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -26,7 +26,9 @@
 				<nav class="header-nav__segment">
 					<a href="./index.html" lang="en" class="logo"><span class="logo-web">Web</span>Studio </a>
 					<ul class="header-nav__list">
-						<li class="header-nav__item"><a href="./index.html" class="header-nav__link header-nav__link--active">Студія</a></li>
+						<li class="header-nav__item"
+							><a href="./index.html" class="header-nav__link header-nav__link--active">Студія</a></li
+						>
 						<li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link">Портфоліо</a></li>
 						<li class="header-nav__item"><a href="" class="header-nav__link">Контакти</a></li>
 					</ul>
@@ -52,10 +54,9 @@
 			</div>
 		</header>
 		<main>
-			<section class="decision decision--overlay ">
+			<section class="decision decision--overlay">
 				<h1 class="decision__title">Ефективні рішення для вашого бізнесу</h1>
 				<button type="button" class="decision__button btn" data-modal-open>Замовити послугу</button>
-				
 			</section>
 
 			<section class="benefits">
@@ -342,53 +343,54 @@
 			</div>
 		</footer>
 		<div class="backdrop is-hidden" data-modal>
-					<div class="modal">
-						<b class="modal__title">Залиште свої дані, ми вам передзвонимо</b>
-						<button class="modal__close-btn btn" data-modal-close>
-							<svg class="modal__close-icon" width="18px" height="18px">
-								<use href="./images/symbol-defs.svg#icon-close-black"></use>
-							</svg>
-						</button>
-						<form class="modal__form">
-							
-								<label class="modal__field">
-									<span class="modal__prompt">Ім'я</span> 
-								<input class="modal__input" type="text" name="user-name"  autocomplete="name" required />
-								<svg class="modal__icon" width="18px" height="18px">
-									<use href="./images/symbol-defs.svg#icon-person-black"></use>
-								</svg>
-								</label> 
-							
-							<label class="modal__field">
-								<span class="modal__prompt">Телефон</span>
-								<input class="modal__input" type="tel" name="user-tel" required/>
-								<svg class="modal__icon" width="18px" height="18px">
-									<use href="./images/symbol-defs.svg#icon-phone-black"></use>
-								</svg>
-							</label>
-							<label class="modal__field">
-								<span class="modal__prompt">Пошта</span>
-								<input class="modal__input" type="email" name="user-mail" autocomplete="email" required />
-								<svg class="modal__icon" width="18px" height="18px">
-									<use href="./images/symbol-defs.svg#icon-email-black"></use>
-								</svg>
-							</label>
-							<label class="modal__comment">
-								<span class="modal__prompt">Коментар</span>
-								<textarea class= "modal__comment-wrap" name="user-comments" placeholder="Введіть текст" ></textarea>
-							</label>
-							<label class="modal__check-wrap">
-								<input class="modal__check visually-hidden" type="checkbox" name="contract" required  />
-								<svg  class= "modal__icon-check" width="16px" height="15px">
-									<use class="modal__icon-disagree" href="./images/symbol-defs.svg#icon-choice-square"></use>
-									<use class="modal__icon-agree" href="./images/symbol-defs.svg#icon-check"></use>
-								</svg>
-								<span class="modal__contract">Погоджуюся з розсилкою та приймаю <a class="modal__contract-link" href="">Умови договору</a></span>
-							</label>
-							<button type="submit" class="modal__btn btn">Відправити</button>
-						</form>
-					</div>
-				</div>
+			<div class="modal">
+				<b class="modal__title">Залиште свої дані, ми вам передзвонимо</b>
+				<button class="modal__close-btn btn" data-modal-close>
+					<svg class="modal__close-icon" width="18px" height="18px">
+						<use href="./images/symbol-defs.svg#icon-close-black"></use>
+					</svg>
+				</button>
+				<form class="modal__form">
+					<label class="modal__field">
+						<span class="modal__prompt">Ім'я</span>
+						<input class="modal__input" type="text" name="user-name" autocomplete="name" required />
+						<svg class="modal__icon" width="18px" height="18px">
+							<use href="./images/symbol-defs.svg#icon-person-black"></use>
+						</svg>
+					</label>
+
+					<label class="modal__field">
+						<span class="modal__prompt">Телефон</span>
+						<input class="modal__input" type="tel" name="user-tel" required />
+						<svg class="modal__icon" width="18px" height="18px">
+							<use href="./images/symbol-defs.svg#icon-phone-black"></use>
+						</svg>
+					</label>
+					<label class="modal__field">
+						<span class="modal__prompt">Пошта</span>
+						<input class="modal__input" type="email" name="user-mail" autocomplete="email" required />
+						<svg class="modal__icon" width="18px" height="18px">
+							<use href="./images/symbol-defs.svg#icon-email-black"></use>
+						</svg>
+					</label>
+					<label class="modal__comment">
+						<span class="modal__prompt">Коментар</span>
+						<textarea class="modal__comment-wrap" name="user-comments" placeholder="Введіть текст"></textarea>
+					</label>
+					<label class="modal__check-wrap">
+						<input class="modal__check visually-hidden" type="checkbox" name="contract" required />
+						<svg class="modal__icon-check" width="16px" height="15px">
+							<use class="modal__icon-disagree" href="./images/symbol-defs.svg#icon-choice-square"></use>
+							<use class="modal__icon-agree" href="./images/symbol-defs.svg#icon-check"></use>
+						</svg>
+						<span class="modal__contract"
+							>Погоджуюся з розсилкою та приймаю <a class="modal__contract-link" href="">Умови договору</a></span
+						>
+					</label>
+					<button type="submit" class="modal__btn btn">Відправити</button>
+				</form>
+			</div>
+		</div>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

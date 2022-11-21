@@ -54,8 +54,8 @@
 	text-decoration: none;
 	transition: color 250ms var(--timing-function);
 
-	.&:hover,
-	.&:focus {
+	&:hover,
+	&:focus {
 		color: var(--accent-color);
 	}
 }
