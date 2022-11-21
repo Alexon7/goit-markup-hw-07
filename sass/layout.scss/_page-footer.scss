@@ -71,9 +71,8 @@
 	@extend %list;
 	display: flex;
 	margin-top: 20px;
-}
-.footer-social__list:not(:last-child) {
-	margin-right: 10px;
+	gap: 10px;
+
 }
 .footer-social__link {
 	@extend %link;

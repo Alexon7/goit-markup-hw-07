@@ -10,7 +10,7 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social__list, .element__list, .clients__list, .team__social-list, .team__list, .about__list, .benefits__list, .header-contact__list, .header-nav__list {
+.footer-social__list, .element__list, .filter, .clients__list, .team__social-list, .team__list, .about__list, .benefits__list, .header-contact__list, .header-nav__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -79,8 +79,6 @@ p {
 
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -247,6 +245,7 @@ p {
 }
 
 .modal__comment-wrap {
+  resize: none;
   padding: 12px 16px;
   height: 120px;
   margin-top: 4px;
@@ -310,7 +309,7 @@ p {
   padding-left: 12px;
 }
 
-.modal__icon-check {
+.modal__icon-agree {
   opacity: 0;
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
@@ -970,10 +969,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-}
-
-.footer-social__list:not(:last-child) {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .footer-social__link {

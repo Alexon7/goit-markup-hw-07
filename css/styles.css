@@ -675,6 +675,7 @@ textarea {
 }
 .modal__check {
 	margin-right: 8px;
+	
 }
 .modal__contract {
 	font-size: 14px;
@@ -693,9 +694,7 @@ textarea {
 	opacity: 0;
 	transition: opacity 250ms var(--timing-function);
 }
-.modal__check:checked + .modal__icon-check .modal__icon-agree {
-	opacity: 1;
-}
+
 .modal__contract-link {
 	color: var(--accent-color);
 }
